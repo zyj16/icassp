@@ -1,0 +1,13 @@
+nohup: ignoring input
+Dataset name: Tmall
+The number of users: 31882
+The number of items: 31232
+The behavior ratings: [1093807, 140068, 49482, 167862]
+The number of ratings: 1451219
+Average actions of users: 45.52
+Average actions of items: 46.47
+The density of the dataset: 0.001457
+The sparsity of the dataset: 99.854257%
+already load adj matrix 0.3507349491119385
+already load pre adj matrix
+use the pre adjcency matrix

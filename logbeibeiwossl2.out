@@ -1,0 +1,25 @@
+nohup: ignoring input
+Dataset name: Beibei
+The number of users: 21716
+The number of items: 7977
+The behavior ratings: [2412586, 642622, 282860]
+The number of ratings: 3338068
+Average actions of users: 153.71
+Average actions of items: 418.46
+The density of the dataset: 0.019270
+The sparsity of the dataset: 98.073026%
+already load adj matrix 0.7945771217346191
+already load pre adj matrix
+use the pre adjcency matrix
+586
+179
+94
+Traceback (most recent call last):
+  File "/root/autodl-tmp/MBSSL-master/MBSSL.py", line 693, in <module>
+    recloss = RecLoss(data_config=config, args=args).to(device)
+  File "/root/autodl-tmp/MBSSL-master/MBSSL.py", line 388, in __init__
+    self.wid = eval(args.wid)
+  File "<string>", line 1
+    [0.1,0.1,0.1]]
+                 ^
+SyntaxError: unmatched ']'

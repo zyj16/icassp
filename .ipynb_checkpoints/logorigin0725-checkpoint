@@ -1,0 +1,18 @@
+nohup: ignoring input
+Dataset name: Taobao
+The number of users: 48749
+The number of items: 39493
+The behavior ratings: [1548162, 193747, 211022]
+The number of ratings: 1952931
+Average actions of users: 40.06
+Average actions of items: 49.45
+The density of the dataset: 0.001014
+The sparsity of the dataset: 99.898562%
+already load adj matrix 0.41640591621398926
+already load pre adj matrix
+use the pre adjcency matrix
+213
+54
+50
+without pretraining.
+Epoch 0 [182.2s]: train==[57893.57753=-0.00034 + 0.10432 + 19386.30851 + 38507.16493]

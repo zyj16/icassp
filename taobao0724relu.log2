@@ -1,0 +1,39 @@
+Dataset name: Taobao
+The number of users: 48749
+The number of items: 39493
+The behavior ratings: [1548162, 193747, 211022]
+The number of ratings: 1952931
+Average actions of users: 40.06
+Average actions of items: 49.45
+The density of the dataset: 0.001014
+The sparsity of the dataset: 99.898562%
+already load adj matrix 0.42598724365234375
+already load pre adj matrix
+use the pre adjcency matrix
+213
+54
+50
+without pretraining.
+/root/miniconda3/lib/python3.10/site-packages/torch/autograd/__init__.py:173: UserWarning: Error detected in LogSoftmaxBackward0. Traceback of forward call that caused the error:
+  File "/root/autodl-tmp/MBSSL-master/MBSSL.py", line 862, in <module>
+    argument_ssl_loss = align_ssl_loss(u_batch_list, i_batch_list, ua_embeddings_sub1[:,i,:,:], ia_embeddings_sub1[:,i,:,:], ua_embeddings_sub2[:,i,:,:], ia_embeddings_sub2[:,i,:,:])
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/autodl-tmp/MBSSL-master/MBSSL.py", line 561, in forward
+    item_cl_loss = self.criterion(cl_logits, target)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 1164, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/nn/functional.py", line 3014, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+ (Triggered internally at  /opt/conda/conda-bld/pytorch_1656352645774/work/torch/csrc/autograd/python_anomaly_mode.cpp:102.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Traceback (most recent call last):
+  File "/root/autodl-tmp/MBSSL-master/MBSSL.py", line 882, in <module>
+    batch_aru_ssl_loss.backward(retain_graph=True)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/root/miniconda3/lib/python3.10/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: Function 'LogSoftmaxBackward0' returned nan values in its 0th output.
