@@ -643,7 +643,7 @@ def set_seed(seed):
 
 
 if __name__ == '__main__':
-    torch.autograd.set_detect_anomaly(True)
+    
 
     os.environ["GIT_PYTHON_REFRESH"] = "quiet"
     os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
